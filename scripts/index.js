@@ -10,6 +10,7 @@ $(document).ready(function () {
 });
 
 
+
 // render cards
 //cards for rendering
 const initialCards = [
@@ -54,3 +55,23 @@ function renderItem(link, title, episode, category) {
 initialCards.forEach((item) => {
   renderItem(item.link, item.title, item.episode, item.category);
 });
+
+
+$(document).ready(function() {
+    $(".slider-continue").slick({
+        
+    })
+})
+
+$(document).ready(function() {
+    $(".slider-top-rated").slick({
+        
+    })
+})
+
+$(document).ready(function() {
+    $(".slider-genres").slick({
+        rows: 2,
+        
+    })
+})

@@ -78,11 +78,11 @@
 }
 
 /* Ограничивающая оболочка */
-.slick-list {
+.slider .slick-list {
   overflow: hidden;
 }
 /* Лента слайдов */
-.slick-track {
+.slider .slick-track {
   width: 680px;
   height: 308px;
   display: flex;
@@ -113,6 +113,7 @@
   background-color: rgba(249, 249, 249, 0.2);
   backdrop-filter: blur(4.40759px);
   border-radius: 13.2228px;
+  cursor: pointer;
 }
 
 .slider .slick-arrow.slick-next {
@@ -123,6 +124,7 @@
   background-color: rgba(249, 249, 249, 0.2);
   backdrop-filter: blur(4.40759px);
   border-radius: 13.2228px;
+  cursor: pointer;
 }
 
 /* Точки (булиты) */
@@ -150,6 +152,7 @@
   border: none;
   background: #f9f9f9;
   border-radius: 50%;
+  cursor: pointer;
 }
 
 .slider .slick-slide {
@@ -181,9 +184,8 @@
   padding: 16px 22px;
   background: rgba(249, 249, 249, 0.2);
   backdrop-filter: blur(4.40759px);
-  /* Note: backdrop-filter has minimal browser support */
-
   border-radius: 13.2228px;
+  cursor: pointer;
 }
 
 .slider .slider__button-watchnow {
@@ -199,9 +201,8 @@
   padding: 16px 22px;
   background: #00b9ae;
   backdrop-filter: blur(4.40759px);
-  /* Note: backdrop-filter has minimal browser support */
-
   border-radius: 13.2228px;
+  cursor: pointer;
 }
 
 .poster {
@@ -289,6 +290,7 @@
   position: absolute;
   top: 204px;
   left: 6px;
+  cursor: pointer;
 }
 
 .gallery__btn-watch {
@@ -299,5 +301,6 @@
   background: #00B9AE;
   border-radius: 13.2228px;
   padding: 15px 40px;
+  cursor: pointer;
 }
 

@@ -1,4 +1,5 @@
 @import url("./vendor/normalize.css");
-@import url("./style.css");
+
 @import url("./styles/left_part.css");
 @import url("./styles/main.css");
+@import url("./styles/right_part.css")

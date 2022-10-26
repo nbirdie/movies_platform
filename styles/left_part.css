@@ -46,6 +46,7 @@
   .menu__item {
     display: flex;
     margin-top: 22px;
+    cursor: pointer;
   }
   
   .menu__text {
@@ -62,13 +63,28 @@
   
   .menu__item:hover .menu__text {
     color: #00b9ae;
+ 
   }
   
   .menu__icon {
     display: inline-block;
-    width: 21px;
-    height: 21px;
+    justify-self: start;
+    width: 21.16px;
+    height: 21.16px;
     background-size: cover;
+    padding: 0;
+    margin: 0;
+  }
+
+  .menu__icon-container {
+    width: 21.16px;
+    height: 21.16px;
+  }
+
+  .menu__icon_place_watchlist {
+    width: 100%;
+    height: 100%;
+
   }
   
   .menu__item:hover .menu__icon {
