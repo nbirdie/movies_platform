@@ -1,0 +1,303 @@
+.main {
+  padding: 42px 0 42px;
+  margin: 0 auto;
+  width: 680px;
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 52px;
+}
+
+.navbar__item {
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 21.1564px;
+  line-height: 100%;
+  color: #f9f9f9;
+  position: relative;
+}
+
+.navbar__item::after {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -12px;
+  height: 3.53px;
+  width: 0;
+  background: #00b9ae;
+  content: "";
+}
+
+.navbar__item:hover::after {
+  width: 100%;
+  transition: cubic-bezier(0.39, 0.575, 0.565, 1) 0.3s all;
+}
+
+.navbar_items {
+  display: flex;
+  column-gap: 40px;
+}
+
+.navbar__search-field {
+  position: relative;
+}
+
+.navbar__input {
+  width: 186px;
+  height: 49.37px;
+  background: #21242d;
+  border: 0.881518px solid rgba(249, 249, 249, 0.1);
+  border-radius: 10.5782px;
+  color: white;
+}
+
+.navbar__search-field .navbar__input {
+  padding-left: 56px;
+  padding-right: 35px;
+}
+
+.navbar__icon_place_left {
+  position: absolute;
+  left: 22px;
+  top: 14px;
+  bottom: 14px;
+}
+
+.navbar__icon_place_right {
+  position: absolute;
+  right: 14px;
+  top: 14px;
+  bottom: 14px;
+}
+
+/* Ограничивающая оболочка */
+.slick-list {
+  overflow: hidden;
+}
+/* Лента слайдов */
+.slick-track {
+  width: 680px;
+  height: 308px;
+  display: flex;
+}
+
+/* Concrete slider */
+.slider {
+  display: flex;
+  position: relative;
+  overflow: hidden;
+}
+
+.slider .slick-arrow {
+  position: absolute;
+  top: 45%;
+  z-index: 10;
+  font-size: 0;
+  width: 7px;
+  height: 12px;
+  border: none;
+}
+
+.slider .slick-arrow.slick-prev {
+  left: 17px;
+  background: url("../images/previous.svg") 0 0 no-repeat;
+  background-position: center;
+  padding: 18px 18.57px;
+  background-color: rgba(249, 249, 249, 0.2);
+  backdrop-filter: blur(4.40759px);
+  border-radius: 13.2228px;
+}
+
+.slider .slick-arrow.slick-next {
+  right: 17px;
+  background: url("../images/next.svg") 0 0 no-repeat;
+  background-position: center;
+  padding: 18px 18.57px;
+  background-color: rgba(249, 249, 249, 0.2);
+  backdrop-filter: blur(4.40759px);
+  border-radius: 13.2228px;
+}
+
+/* Точки (булиты) */
+.slider .slick-dots {
+  position: absolute;
+  top: 76%;
+  left: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.slider .slick-dots li {
+  list-style: none;
+  margin: 0 8px;
+}
+/* Активная точка */
+.slider .slick-dots li.slick-active button {
+  background: #00b9ae;
+}
+/* Элемент точки */
+.slider .slick-dots button {
+  font-size: 0;
+  width: 6px;
+  height: 11px;
+  border: none;
+  background: #f9f9f9;
+  border-radius: 50%;
+}
+
+.slider .slick-slide {
+  position: relative;
+}
+
+.slider .slider__title {
+  position: absolute;
+  left: 6%;
+  top: 4%;
+  z-index: 10;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 35px;
+  line-height: 100%;
+  color: #f9f9f9;
+}
+
+.slider .slider__button-watchlish {
+  position: absolute;
+  top: 76%;
+  left: 6%;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15.8673px;
+  line-height: 100%;
+  color: #f9f9f9;
+  border: none;
+  padding: 16px 22px;
+  background: rgba(249, 249, 249, 0.2);
+  backdrop-filter: blur(4.40759px);
+  /* Note: backdrop-filter has minimal browser support */
+
+  border-radius: 13.2228px;
+}
+
+.slider .slider__button-watchnow {
+  position: absolute;
+  top: 76%;
+  right: 6%;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15.8673px;
+  line-height: 100%;
+  color: #16181e;
+  border: none;
+  padding: 16px 22px;
+  background: #00b9ae;
+  backdrop-filter: blur(4.40759px);
+  /* Note: backdrop-filter has minimal browser support */
+
+  border-radius: 13.2228px;
+}
+
+.poster {
+  margin-bottom: 52px;
+}
+
+.pmovies__title {
+  font-style: normal;
+  font-weight: 800;
+  font-size: 26.4455px;
+  line-height: 100%;
+  color: #f9f9f9;
+}
+
+.gallery {
+  margin: 0 auto;
+}
+
+.gallery__list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(209px, 1fr));
+  grid-template-rows: 1fr;
+  grid-gap: 26px;
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.gallery__item {
+  max-width: 209px;
+  height: 262px;
+  position: relative;
+  border-radius: 17.6304px;
+  background: transparent;
+  margin: 0 auto;
+}
+
+.gallery__title {
+  position: absolute;
+  top: 18px;
+  left: 18px;
+  margin: 0;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 21.1564px;
+  line-height: 100%;
+  color: #f9f9f9;
+}
+
+.gallery__rating {
+  position: absolute;
+  top: 50px;
+  left: 18px;
+}
+
+.gallery__episode {
+  position: absolute;
+  top: 160px;
+  left: 8px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15.8673px;
+  line-height: 100%;
+  color: rgba(249, 249, 249, 0.7);
+}
+
+.gallery__category {
+  position: absolute;
+  top: 160px;
+  right: 8px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15.8673px;
+  line-height: 100%;
+  color: rgba(249, 249, 249, 0.7);
+}
+
+.gallery__btn-plus {
+  background: rgba(249, 249, 249, 0.2);
+  backdrop-filter: blur(4.40759px);
+  border-radius: 13.2228px;
+  width: 14px;
+  height: 14px;
+  padding: 17px;
+  position: absolute;
+  top: 204px;
+  left: 6px;
+}
+
+.gallery__btn-watch {
+  position: absolute;
+  top: 204px;
+  right: 8px;
+  border: none;
+  background: #00B9AE;
+  border-radius: 13.2228px;
+  padding: 15px 40px;
+}
+

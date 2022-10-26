@@ -1,0 +1,78 @@
+.page {
+    max-width: 1400px;
+    min-width: 320px;
+    width: 100%;
+    font-family: "Lato", sans-serif;
+    padding: 0;
+    margin: 0 auto;
+    display: flex;
+    background: #16181e;
+  }
+  
+  html {
+    background: #16181e;
+  }
+  
+  .left-part {
+    padding: 42px 0 42px 33px;
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 16%;
+    background: #21242d;
+    border: 1.76304px solid rgba(249, 249, 249, 0.1);
+  }
+  
+  
+  .logo {
+    margin-bottom: 10px;
+  }
+  
+  .menu {
+    margin-top: 52px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .menu__title {
+    font-weight: 700;
+    font-size: 15.8673px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    color: rgba(249, 249, 249, 0.67);
+    margin: 0;
+  }
+  
+  .menu__item {
+    display: flex;
+    margin-top: 22px;
+  }
+  
+  .menu__text {
+    margin: 0 0 0 13px;
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15.8673px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    color: #f9f9f9;
+  }
+  
+  .menu__item:hover .menu__text {
+    color: #00b9ae;
+  }
+  
+  .menu__icon {
+    display: inline-block;
+    width: 21px;
+    height: 21px;
+    background-size: cover;
+  }
+  
+  .menu__item:hover .menu__icon {
+    filter: invert(54%) sepia(68%) saturate(3460%) hue-rotate(142deg)
+      brightness(98%) contrast(103%);
+  }
+  
