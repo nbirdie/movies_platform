@@ -57,19 +57,19 @@ initialCards.forEach((item) => {
 });
 
 
-$(document).ready(function() {
+$(document).init(function() {
     $(".slider-continue").slick({
         
     })
 })
 
-$(document).ready(function() {
+$(document).init(function() {
     $(".slider-top-rated").slick({
         
     })
 })
 
-$(document).ready(function() {
+$(document).init(function() {
     $(".slider-genres").slick({
         rows: 2,
         
