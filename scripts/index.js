@@ -1,4 +1,4 @@
-$(document).init(function () {
+$(document).ready(function () {
   $(".slider").slick({
     dots: true,
     speed: 1000,
@@ -57,19 +57,19 @@ initialCards.forEach((item) => {
 });
 
 
-$(document).init(function() {
+$(document).ready(function() {
     $(".slider-continue").slick({
         
     })
 })
 
-$(document).init(function() {
+$(document).ready(function() {
     $(".slider-top-rated").slick({
         
     })
 })
 
-$(document).init(function() {
+$(document).ready(function() {
     $(".slider-genres").slick({
         rows: 2,
         
