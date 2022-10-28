@@ -17,331 +17,334 @@
       type="text/css"
       href="//cdn.jsdelivr.net/npm/slick-slider@1.8.1/slick/slick.css"
     />
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
     <title>Movie Stream Service</title>
   </head>
   <body>
-    <div class="page">
-      <div class="left-part">
-        <div class="logo">
-          <img src="./images/logo.svg" alt="logo" />
-        </div>
-        <div class="menu menu_place_menu">
-          <h2 class="menu__title">Menu</h2>
-          <div class="menu__item">
-            <img
-              class="menu__icon menu__icon_place_home"
-              src="./images/icon_home.svg"
-            />
-            <p class="menu__text">Home</p>
-          </div>
-          <div class="menu__item">
-            <img class="menu__icon" src="./images/icon_discover.svg" />
-            <p class="menu__text">Discover</p>
-          </div>
-          <div class="menu__item">
-            <img class="menu__icon" src="./images/icon_award.svg" />
-            <p class="menu__text">Awards</p>
-          </div>
-          <div class="menu__item">
-            <img class="menu__icon" src="./images/icon_celebrities.svg" />
-            <p class="menu__text">Celebrities</p>
-          </div>
-        </div>
-        <div class="menu menu_place_library">
-          <h2 class="menu__title">Library</h2>
-          <div class="menu__item">
-            <img class="menu__icon" src="./images/icon_recent.svg" />
-            <p class="menu__text">Recent</p>
-          </div>
-          <div class="menu__item">
-            <img class="menu__icon" src="./images/icon_top-rated.svg" />
-            <p class="menu__text">Top Rated</p>
-          </div>
-          <div class="menu__item">
-            <img class="menu__icon" src="./images/icon_downloaded.svg" />
-            <p class="menu__text">Downloaded</p>
-          </div>
-          <div class="menu__item">
-            <img class="menu__icon" src="./images/icon_playlists.svg" />
-            <p class="menu__text">Playlists</p>
-          </div>
-          <div class="menu__item">
-            <img class="menu__icon" src="./images/icon_watchlist.svg"/>
-            <p class="menu__text">Watchlist</p>
-          </div>
-          <div class="menu__item">
-            <img class="menu__icon" src="./images/icon_completed.svg" />
-            <p class="menu__text">Completed</p>
-          </div>
-        </div>
-        <div class="menu menu_place_general">
-          <h2 class="menu__title">General</h2>
-          <div class="menu__item">
-            <img class="menu__icon" src="./images/icon_settings.svg" />
-            <p class="menu__text">Settings</p>
-          </div>
-          <div class="menu__item">
-            <img class="menu__icon" src="./images/icon_log-out.svg" />
-            <p class="menu__text">Log Out</p>
-          </div>
-        </div>
-      </div>
-      <div class="main">
-        <nav class="navbar">
-          <div class="navbar_items">
-            <div><a class="navbar__item" href="#">Movies</a></div>
-            <div><a class="navbar__item" href="#">TV Shows</a></div>
-            <div><a class="navbar__item" href="#">Anime</a></div>
-          </div>
-          <div class="navbar__search-field">
-            <input type="text" class="navbar__input" placeholder="Search" />
-            <img
-              class="navbar__icon navbar__icon_place_left"
-              src="./images/search.svg"
-              alt="search icon"
-            />
-            <img
-              class="navbar__icon navbar__icon_place_right"
-              src="./images/filter.svg"
-              alt="filter icon"
-            />
-          </div>
-        </nav>
-        <section class="poster">
-          <div class="slider">
-            <div class="slider__item">
-              <img
-                class="slider__image"
-                src="./images/carousel_img1.svg"
-                alt="Crown poster"
-                id="carrouselimg1"
-              />
-              <h2 class="slider__title">The Crown</h2>
-              <button class="slider__button-watchlish">+ Watchlist</button>
-              <button class="slider__button-watchnow">Watch Now</button>
-            </div>
-            <div class="slider__item">
-              <img
-                class="slider__image"
-                src="./images/carousel_img2.svg"
-                alt="Picky poster"
-                id="carrouselimg2"
-              />
-              <h2 class="slider__title">The Crown Today</h2>
-              <button class="slider__button-watchlish">+ Watchlist</button>
-              <button class="slider__button-watchnow">Watch Now</button>
-            </div>
-            <div class="slider__item">
-              <img
-                class="slider__image"
-                src="./images/carousel_img3.svg"
-                alt="Rings poster"
-                id="carrouselimg3"
-              />
-              <h2 class="slider__title">The Crown Tomorrow</h2>
-              <button class="slider__button-watchlish">+ Watchlist</button>
-              <button class="slider__button-watchnow">Watch Now</button>
-            </div>
-          </div>
-        </section>
-        <section class="pmovies">
-          <h1 class="pmovies__title">Popular on TinyMoviez</h1>
-          <div class="gallery">
-            <ul class="gallery__list">
-              <!-- renders with js with template -->
-            </ul>
-          </div>
-        </section>
-      </div>
-      <div class="right-part">
-        <div class="settings">
-          <img
-            class="settings__notification-icon"
-            src="./images/notification.svg"
-            alt="notification icon"
-          />
-          <div class="settings__profile">
-            <h1 class="settings__name">Samantha</h1>
-            <img
-              class="settings__more"
-              src="./images/more.svg"
-              alt="more button"
-            />
-            <img
-              class="settings__profile-picture"
-              src="./images/profile-picture.svg"
-              alt="profile picture"
-            />
-          </div>
-        </div>
-        <section class="sliders sliders_place_continue">
-          <div class="sliders__container">
-            <h2 class="sliders__title">Continue</h2>
-            <div class="sliders__see-more">
-              <h4 class="sliders__see-more-title">See more</h4>
-              <img
-                class="sliders__see-more-btn"
-                src="./images/see-more.svg"
-                alt="see more arrow"
-              />
-            </div>
-          </div>
-          <div class="slider-continue">
-            <div class="slider-continue__item">
-              <img
-                class="slider-continue__img"
-                src="./images/wandavision.svg"
-                alt="WandaVision"
-              />
-              <h3 class="slider-continue__title">WandaVision</h3>
-              <h4 class="slider-continue__episode">1 Episode left</h4>
-              <img
-                class="slider-continue__bar"
-                src="./images/progress-bar.svg"
-                alt="progress bar"
-              />
-              <button class="slider-continue__drop-btn">Drop</button>
-              <button class="slider-continue__watch-btn">Watch</button>
-            </div>
-            <div class="slider-continue__item">
-              <img
-                class="slider-continue__img"
-                src="./images/rickymorti.svg"
-                alt="Rick and Morty"
-              />
-              <h3 class="slider-continue__title">Rick and Morty</h3>
-              <h4 class="slider-continue__episode">2 Episodes left</h4>
-              <img
-                class="slider-continue__bar"
-                src="./images/progress-bar.svg"
-                alt="progress bar"
-              />
-              <button class="slider-continue__drop-btn">Drop</button>
-              <button class="slider-continue__watch-btn">Watch</button>
-            </div>
-          </div>
-        </section>
-        <section class="sliders slider_place_top-rated">
-          <div class="sliders__container">
-            <h2 class="sliders__title">Top Rated</h2>
-            <div class="sliders__see-more">
-              <h4 class="sliders__see-more-title">See more</h4>
-              <img
-                class="sliders__see-more-btn"
-                src="./images/see-more.svg"
-                alt="see more arrow"
-              />
-            </div>
-          </div>
-          <div class="slider-top-rated">
-            <div class="slider-top-rated__item">
-              <img
-                class="slider-top-rated__img"
-                src="./images/supernatural.svg"
-                alt="Supernatural"
-              />
-              <h3 class="slider-top-rated__title">Supernatural</h3>
-              <h4 class="slider-top-rated__episode">320 Ep</h4>
-              <h4 class="slider-top-rated__category">Horror, Fantasy</h4>
-              <img
-                class="slider-top-rated__add-btn"
-                src="./images/add.svg"
-                alt="plus button"
-              />
-              <button class="slider-top-rated__watch-btn">Watch</button>
-            </div>
-            <div class="slider-top-rated__item">
-              <img
-                class="slider-top-rated__img"
-                src="./images/supernatural.svg"
-                alt="Supernatural"
-              />
-              <h3 class="slider-top-rated__title">Supernatural</h3>
-              <h4 class="slider-top-rated__episode">320 Ep</h4>
-              <h4 class="slider-top-rated__category">Horror, Fantasy</h4>
-              <img
-                class="slider-top-rated__add-btn"
-                src="./images/add.svg"
-                alt="plus button"
-              />
-              <button class="slider-top-rated__watch-btn">Watch</button>
-            </div>
-          </div>
-        </section>
-        <section class="sliders slider_place_genres">
-          <div class="sliders__container">
-            <h2 class="sliders__title">Genres</h2>
-            <div class="sliders__see-more">
-              <h4 class="sliders__see-more-title">See more</h4>
-              <img
-                class="sliders__see-more-btn"
-                src="./images/see-more.svg"
-                alt="see more arrow"
-              />
-            </div>
-          </div>
-          <div class="slider-genres">
-            <div class="slider-genres__item">
-              <img
-                class="slider-genres__image"
-                src="./images/drama.svg"
-                alt="drama"
-              />
-              <h3 class="slider-genres__title">Drama</h3>
-            </div>
-            <div class="slider-genres__item">
-              <img
-                class="slider-genres__image"
-                src="./images/sitcom.svg"
-                alt="sitcom"
-              />
-              <h3 class="slider-genres__title">Sitcom</h3>
-            </div>
-            <div class="slider-genres__item">
-              <img
-                class="slider-genres__image"
-                src="./images/drama.svg"
-                alt="drama"
-              />
-              <h3 class="slider-genres__title">Drama</h3>
-            </div>
-            <div class="slider-genres__item">
-              <img
-                class="slider-genres__image"
-                src="./images/sitcom.svg"
-                alt="sitcom"
-              />
-              <h3 class="slider-genres__title">Sitcom</h3>
-            </div>
-          </div>
-        </section>
-      </div>
+    <div class="loader">
+      <img class="loader__image" src="./images/page-loader.gif">
     </div>
-    <!-- template for popular movies -->
-    <template class="gallery__template">
-      <li class="gallery__item">
-        <img class="gallery__picture" src="#" alt="loki film poster" />
-        <img
-          class="gallery__rating"
-          src="./images/rating.svg"
-          alt="rating with stars"
-        />
-        <h3 class="gallery__title"></h3>
-        <h4 class="gallery__episode"></h4>
-        <h4 class="gallery__category"></h4>
-        <img
-          class="gallery__btn-plus"
-          src="./images/add.svg"
-          alt="plus to add"
-        />
-        <button class="gallery__btn-watch">Watch</button>
-      </li>
-    </template>
-    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
-    <script
-      type="text/javascript"
-      src="//cdn.jsdelivr.net/npm/slick-slider@1.8.1/slick/slick.min.js"
-    ></script>
-    <script src="./scripts/index.js" type="text/javascript"></script>
+      <div class="page">
+        <div class="left-part">
+          <div class="logo">
+            <img src="./images/logo.svg" alt="logo" />
+          </div>
+          <div class="menu menu_place_menu">
+            <h2 class="menu__title">Menu</h2>
+            <div class="menu__item">
+              <img
+                class="menu__icon menu__icon_place_home"
+                src="./images/icon_home.svg"
+              />
+              <p class="menu__text">Home</p>
+            </div>
+            <div class="menu__item">
+              <img class="menu__icon" src="./images/icon_discover.svg" />
+              <p class="menu__text">Discover</p>
+            </div>
+            <div class="menu__item">
+              <img class="menu__icon" src="./images/icon_award.svg" />
+              <p class="menu__text">Awards</p>
+            </div>
+            <div class="menu__item">
+              <img class="menu__icon" src="./images/icon_celebrities.svg" />
+              <p class="menu__text">Celebrities</p>
+            </div>
+          </div>
+          <div class="menu menu_place_library">
+            <h2 class="menu__title">Library</h2>
+            <div class="menu__item">
+              <img class="menu__icon" src="./images/icon_recent.svg" />
+              <p class="menu__text">Recent</p>
+            </div>
+            <div class="menu__item">
+              <img class="menu__icon" src="./images/icon_top-rated.svg" />
+              <p class="menu__text">Top Rated</p>
+            </div>
+            <div class="menu__item">
+              <img class="menu__icon" src="./images/icon_downloaded.svg" />
+              <p class="menu__text">Downloaded</p>
+            </div>
+            <div class="menu__item">
+              <img class="menu__icon" src="./images/icon_playlists.svg" />
+              <p class="menu__text">Playlists</p>
+            </div>
+            <div class="menu__item">
+              <img class="menu__icon" src="./images/icon_watchlist.svg" />
+              <p class="menu__text">Watchlist</p>
+            </div>
+            <div class="menu__item">
+              <img class="menu__icon" src="./images/icon_completed.svg" />
+              <p class="menu__text">Completed</p>
+            </div>
+          </div>
+          <div class="menu menu_place_general">
+            <h2 class="menu__title">General</h2>
+            <div class="menu__item">
+              <img class="menu__icon" src="./images/icon_settings.svg" />
+              <p class="menu__text">Settings</p>
+            </div>
+            <div class="menu__item">
+              <img class="menu__icon" src="./images/icon_log-out.svg" />
+              <p class="menu__text">Log Out</p>
+            </div>
+          </div>
+        </div>
+        <div class="main">
+          <nav class="navbar">
+            <div class="navbar_items">
+              <div><a class="navbar__item" href="#">Movies</a></div>
+              <div><a class="navbar__item" href="#">TV Shows</a></div>
+              <div><a class="navbar__item" href="#">Anime</a></div>
+            </div>
+            <div class="navbar__search-field">
+              <input type="text" class="navbar__input" placeholder="Search" />
+              <img
+                class="navbar__icon navbar__icon_place_left"
+                src="./images/search.svg"
+                alt="search icon"
+              />
+              <img
+                class="navbar__icon navbar__icon_place_right"
+                src="./images/filter.svg"
+                alt="filter icon"
+              />
+            </div>
+          </nav>
+          <section class="poster">
+            <div class="slider">
+              <div class="slider__item">
+                <img
+                  class="slider__image"
+                  src="./images/carousel_img1.svg"
+                  alt="Crown poster"
+                  id="carrouselimg1"
+                />
+                <h2 class="slider__title">The Crown</h2>
+                <button class="slider__button-watchlish">+ Watchlist</button>
+                <button class="slider__button-watchnow">Watch Now</button>
+              </div>
+              <div class="slider__item">
+                <img
+                  class="slider__image"
+                  src="./images/carousel_img2.svg"
+                  alt="Picky poster"
+                  id="carrouselimg2"
+                />
+                <h2 class="slider__title">The Crown Today</h2>
+                <button class="slider__button-watchlish">+ Watchlist</button>
+                <button class="slider__button-watchnow">Watch Now</button>
+              </div>
+              <div class="slider__item">
+                <img
+                  class="slider__image"
+                  src="./images/carousel_img3.svg"
+                  alt="Rings poster"
+                  id="carrouselimg3"
+                />
+                <h2 class="slider__title">The Crown Tomorrow</h2>
+                <button class="slider__button-watchlish">+ Watchlist</button>
+                <button class="slider__button-watchnow">Watch Now</button>
+              </div>
+            </div>
+          </section>
+          <section class="pmovies">
+            <h1 class="pmovies__title">Popular on TinyMoviez</h1>
+            <div class="gallery">
+              <ul class="gallery__list">
+                <!-- renders with js with template -->
+              </ul>
+            </div>
+          </section>
+        </div>
+        <div class="right-part">
+          <div class="settings">
+            <img
+              class="settings__notification-icon"
+              src="./images/notification.svg"
+              alt="notification icon"
+            />
+            <div class="settings__profile">
+              <h1 class="settings__name">Samantha</h1>
+              <img
+                class="settings__more"
+                src="./images/more.svg"
+                alt="more button"
+              />
+              <img
+                class="settings__profile-picture"
+                src="./images/profile-picture.svg"
+                alt="profile picture"
+              />
+            </div>
+          </div>
+          <section class="sliders sliders_place_continue">
+            <div class="sliders__container">
+              <h2 class="sliders__title">Continue</h2>
+              <div class="sliders__see-more">
+                <h4 class="sliders__see-more-title">See more</h4>
+                <img
+                  class="sliders__see-more-btn"
+                  src="./images/see-more.svg"
+                  alt="see more arrow"
+                />
+              </div>
+            </div>
+            <div class="slider-continue">
+              <div class="slider-continue__item">
+                <img
+                  class="slider-continue__img"
+                  src="./images/wandavision.svg"
+                  alt="WandaVision"
+                />
+                <h3 class="slider-continue__title">WandaVision</h3>
+                <h4 class="slider-continue__episode">1 Episode left</h4>
+                <img
+                  class="slider-continue__bar"
+                  src="./images/progress-bar.svg"
+                  alt="progress bar"
+                />
+                <button class="slider-continue__drop-btn">Drop</button>
+                <button class="slider-continue__watch-btn">Watch</button>
+              </div>
+              <div class="slider-continue__item">
+                <img
+                  class="slider-continue__img"
+                  src="./images/rickymorti.svg"
+                  alt="Rick and Morty"
+                />
+                <h3 class="slider-continue__title">Rick and Morty</h3>
+                <h4 class="slider-continue__episode">2 Episodes left</h4>
+                <img
+                  class="slider-continue__bar"
+                  src="./images/progress-bar.svg"
+                  alt="progress bar"
+                />
+                <button class="slider-continue__drop-btn">Drop</button>
+                <button class="slider-continue__watch-btn">Watch</button>
+              </div>
+            </div>
+          </section>
+          <section class="sliders slider_place_top-rated">
+            <div class="sliders__container">
+              <h2 class="sliders__title">Top Rated</h2>
+              <div class="sliders__see-more">
+                <h4 class="sliders__see-more-title">See more</h4>
+                <img
+                  class="sliders__see-more-btn"
+                  src="./images/see-more.svg"
+                  alt="see more arrow"
+                />
+              </div>
+            </div>
+            <div class="slider-top-rated">
+              <div class="slider-top-rated__item">
+                <img
+                  class="slider-top-rated__img"
+                  src="./images/supernatural.svg"
+                  alt="Supernatural"
+                />
+                <h3 class="slider-top-rated__title">Supernatural</h3>
+                <h4 class="slider-top-rated__episode">320 Ep</h4>
+                <h4 class="slider-top-rated__category">Horror, Fantasy</h4>
+                <img
+                  class="slider-top-rated__add-btn"
+                  src="./images/add.svg"
+                  alt="plus button"
+                />
+                <button class="slider-top-rated__watch-btn">Watch</button>
+              </div>
+              <div class="slider-top-rated__item">
+                <img
+                  class="slider-top-rated__img"
+                  src="./images/supernatural.svg"
+                  alt="Supernatural"
+                />
+                <h3 class="slider-top-rated__title">Supernatural</h3>
+                <h4 class="slider-top-rated__episode">320 Ep</h4>
+                <h4 class="slider-top-rated__category">Horror, Fantasy</h4>
+                <img
+                  class="slider-top-rated__add-btn"
+                  src="./images/add.svg"
+                  alt="plus button"
+                />
+                <button class="slider-top-rated__watch-btn">Watch</button>
+              </div>
+            </div>
+          </section>
+          <section class="sliders slider_place_genres">
+            <div class="sliders__container">
+              <h2 class="sliders__title">Genres</h2>
+              <div class="sliders__see-more">
+                <h4 class="sliders__see-more-title">See more</h4>
+                <img
+                  class="sliders__see-more-btn"
+                  src="./images/see-more.svg"
+                  alt="see more arrow"
+                />
+              </div>
+            </div>
+            <div class="slider-genres">
+              <div class="slider-genres__item">
+                <img
+                  class="slider-genres__image"
+                  src="./images/drama.svg"
+                  alt="drama"
+                />
+                <h3 class="slider-genres__title">Drama</h3>
+              </div>
+              <div class="slider-genres__item">
+                <img
+                  class="slider-genres__image"
+                  src="./images/sitcom.svg"
+                  alt="sitcom"
+                />
+                <h3 class="slider-genres__title">Sitcom</h3>
+              </div>
+              <div class="slider-genres__item">
+                <img
+                  class="slider-genres__image"
+                  src="./images/drama.svg"
+                  alt="drama"
+                />
+                <h3 class="slider-genres__title">Drama</h3>
+              </div>
+              <div class="slider-genres__item">
+                <img
+                  class="slider-genres__image"
+                  src="./images/sitcom.svg"
+                  alt="sitcom"
+                />
+                <h3 class="slider-genres__title">Sitcom</h3>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+      <!-- template for popular movies -->
+      <template class="gallery__template">
+        <li class="gallery__item">
+          <img class="gallery__picture" src="#" alt="loki film poster" />
+          <img
+            class="gallery__rating"
+            src="./images/rating.svg"
+            alt="rating with stars"
+          />
+          <h3 class="gallery__title"></h3>
+          <h4 class="gallery__episode"></h4>
+          <h4 class="gallery__category"></h4>
+          <img
+            class="gallery__btn-plus"
+            src="./images/add.svg"
+            alt="plus to add"
+          />
+          <button class="gallery__btn-watch">Watch</button>
+        </li>
+      </template>
+      <script
+        type="text/javascript"
+        src="//cdn.jsdelivr.net/npm/slick-slider@1.8.1/slick/slick.min.js"
+      ></script>
+      <script src="./scripts/index.js" type="text/javascript"></script>
   </body>
 </html>

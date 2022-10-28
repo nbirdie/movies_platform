@@ -75,3 +75,8 @@ $(function() {
         
     })
 })
+
+$(window).on('load',function(){
+  $(".loader").fadeOut(1000);
+  $('.page').fadeIn(1000);
+})

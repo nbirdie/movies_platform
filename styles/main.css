@@ -157,6 +157,7 @@
 
 .slider .slick-slide {
   position: relative;
+
 }
 
 .slider .slider__title {
@@ -304,3 +305,21 @@
   cursor: pointer;
 }
 
+
+.loader {
+  position: fixed;
+  z-index: 1111;
+  width: 100vw;
+  height: 100vh;
+  background: #16181e;
+  opacity: 0.7;
+}
+
+.loader__image {
+  position: fixed;
+  z-index: 111111;
+  width: 100px;
+  height: 100px;
+  left: 50vw;
+   top: 40vh;
+}
